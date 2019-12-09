@@ -58,5 +58,5 @@ app.use((err, req, res, next) => {
     console.log(err)
     res.status(500).send(err.message)
 })
-
-app.listen(process.env.PORT || 8000, () => console.log("app is running"))
+var port=8000
+app.listen(process.env.PORT || port, () => console.log("app is running"))
